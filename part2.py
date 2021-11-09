@@ -14,7 +14,7 @@ diamond(4) -->
   * *  
    * 
 
-diamond(5) -->
+diamond(7) -->
       *      
      * *     
     *   *    
@@ -31,4 +31,10 @@ diamond(5) -->
 """
 
 def diamond(size):
-  pass  # delete this when you start writing your code
+  print(" "*(size-1) + "*")
+  for i in range (1, size):
+    print (" "*(size-i-1) + "*" + " "*(2*i-1)+"*")
+  for j in range (1, size-1):
+    print (" "*(size+j-(size)) + "*" + " "*(size-2*j+(size-3))+"*")
+  print(" "*(size-1) + "*")
+  
